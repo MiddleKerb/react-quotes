@@ -48,6 +48,7 @@ export default function ListQuotes() {
         }
       } catch (error) {
         console.error("Error fetching data:", error);
+        setIsLoading(false);
       } finally {
         setIsLoading(false);
       }
